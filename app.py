@@ -20,8 +20,8 @@ if predict_button:
             score = model.predict(hours_studied_reshaped)[0]
             if score>100:
                 score=100
-                if score>=70:
-                    st.write(f"Grade: A, with a score of {score:.2f}")
+            if score>=70:
+                st.write(f"Grade: A, with a score of {score:.2f}")
             elif score>=60 and score<=69:
                 st.write(f"Grade: B, with a score of {score:.2f}")
             elif score>=50 and score<=59:
